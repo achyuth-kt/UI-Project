@@ -1,0 +1,29 @@
+.side-bar{
+    position: fixed;
+    left: 0px;
+    top: 55px;
+    bottom: 0px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+}
+.side-barr{
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.side-barr:hover{
+    background-color: rgba(226, 226, 226, 0.651)
+}
+.side-barr img{
+    margin-top: 2px;
+    width: 24px;
+}
+.side-barr div{
+    margin-top: 8px;
+    font-family: Roboto;
+    font-size: 10px;
+}

@@ -1,0 +1,142 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width:1px ;
+  border-bottom-style:solid ;
+  border-color: rgb(201, 199, 199);
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.right-section {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.hamburger{
+  margin: 0 20px;
+  width: 24px;
+}
+.logo{
+  width: 100px;
+}
+.search-bar{
+  height: 36px;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border: solid;
+  border-radius: 2px;
+  width: 1px;
+  border-color: rgb( 192,192,192);
+  box-shadow: inset ipx 2px 5px rgba(0,0,0,0.05);
+  width: 0;
+}
+.search-bar::placeholder{
+  font-family: Roboto,Arial;
+  font-size: 16px;
+}
+.search-butt{
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 60px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb( 192,192,192);
+  margin-right: 10px;
+  position: relative;
+  transform: opacity 0.15s;
+}
+.search-butt .tool-tip,
+.voice-butt .tool-tipp,
+.right-section-div .tool-tip{
+  font-family: Roboto;
+  font-size: 12px;
+  position: absolute;
+  background-color: rgba(83, 83, 83, 0.8);
+  color: white;
+  top: 55px;
+  border-radius: 3px;
+  padding:9px 5px;
+  opacity: 0;
+  pointer-events: none;
+}
+.search-butt:hover .tool-tip,
+.voice-butt:hover .tool-tipp.hamburger.right-section-div .tool-tip{
+  opacity: 1;
+}
+.search-button{
+  width: 25px;
+  margin-top: 6px;
+  margin-left: -1;
+}
+.voice-butt{
+  display: flex;
+  justify-content: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 20px;
+   border: none;
+   background-color: rgb(240, 240, 240);
+}
+
+.voice-butt:hover .tool-tipp{
+  opacity: 1;
+}
+.voice-search{
+  height: 24px;
+  margin-top: 6px;
+  position: relative;
+}
+.right-img{
+  height: 24px;
+}
+.right-section-div{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.right-section-div:hover .tool-tip{
+  opacity: 1;
+  margin-left: -10px;
+  padding-left: 5px;
+}
+.notification-icon-container{
+  position: relative;
+}
+.notification-count{
+  font-family: Roboto;
+  font-size: 11px;
+  padding:2px 5px;
+  border-radius:10px ;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: #ca0505;
+  color: black; 
+}
